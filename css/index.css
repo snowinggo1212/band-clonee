@@ -1,0 +1,83 @@
+:root {
+/* color */
+    --naver-green : #21c531;
+    --bacground-gray : #f6f8fa;
+/* font-black */
+    --font-black1 : #222;
+    --font-black2 : #444;
+    --font-black3 : #666;
+    --font-black4 : #999;
+/* font-white */
+    --font-white1 : #fff;
+    --font-white2 : #fafafa;
+/* footer font color */
+    --footer-font-light : #b3b3b3;
+    --footer-font-dark : #777;
+
+/* size */
+    --container-size : 1000px;
+}
+
+.unit-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.hide-text {
+    /*공식처럼 쓰인다*/
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+
+}
+
+body {
+    background-color: var(--bacground-gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+h1 {
+    background: url('../img/spr_intro.png') no-repeat 0 -98px;
+	width: 78px;
+	height: 29px;
+    position: relative;
+}
+.header-right {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 32px;
+}
+
+.lang {
+    color: var(--font-black1);
+}
+
+.join {
+   color: var(--font-white2);
+}
+
+.login-button {
+    display: block;
+    color: var(--font-white2);
+    background-color: var(--naver-green);
+    width: 88px;
+    height: 32px;
+    border-radius: 2px;
+    text-align: center;
+}
+
